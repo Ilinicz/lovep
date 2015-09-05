@@ -633,6 +633,10 @@ body {
   width: 100%;
   height: 100%; }
 
+/* line 12, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.active {
+  color: #32779c; }
+
 /* line 13, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 #grain > * {
   position: relative; }
