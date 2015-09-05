@@ -628,7 +628,7 @@ html {
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 body {
   background-color: #111;
-  background: url("../../lovep/assets/images/chalkboard-bg.jpg") repeat;
+  background: url("../images/chalkboard-bg.jpg") repeat;
   color: #999;
   width: 100%;
   height: 100%; }
@@ -686,7 +686,7 @@ header {
     margin-right: 2.35765%;
     width: 100%;
     height: 100%;
-    background: url("../../lovep/assets/images/logo.png"), url("../../lovep/assets/images/ribbon.png");
+    background: url("../images/logo.png"), url("../images/ribbon.png");
     background-repeat: no-repeat;
     background-position: 50% 50%, 50% 30%;
     background-size: 38%, 100%;
