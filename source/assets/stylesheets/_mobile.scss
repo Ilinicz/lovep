@@ -1,0 +1,12 @@
+@include media($mobile) {
+
+  .hidden-mobile {
+    visibility: hidden;
+    display: none !important;
+  }
+
+
+
+
+
+}
