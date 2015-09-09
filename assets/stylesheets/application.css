@@ -400,12 +400,12 @@ th {
   font-family: "Constantine";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/constantine.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/constantine.woff") format("woff"), url("/assets/fonts/constantine.ttf") format("truetype"); }
+  src: url("lovep/assets/fonts/constantine.eot?#iefix") format("embedded-opentype"), url("lovep/assets/fonts/constantine.woff") format("woff"), url("lovep/assets/fonts/constantine.ttf") format("truetype"); }
 @font-face {
   font-family: "Beer money";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/beer_money.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/beer_money.woff") format("woff"), url("/assets/fonts/beer_money.ttf") format("truetype"); }
+  src: url("lovep/assets/fonts/beer_money.eot?#iefix") format("embedded-opentype"), url("lovep/assets/fonts/beer_money.woff") format("woff"), url("lovep/assets/fonts/beer_money.ttf") format("truetype"); }
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
