@@ -401,11 +401,53 @@ th {
   src: url("../fonts/beer_money.eot");
   src: url("../fonts/beer_money.eot?#iefix") format("embedded-opentype"), url("../fonts/beer_money.woff") format("woff"), url("../fonts/beer_money.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Constantine';
-  src: url("../fonts/constantine.eot");
-  src: url("../fonts/constantine.eot?#iefix") format("embedded-opentype"), url("../fonts/constantine.woff") format("woff"), url("../fonts/constantine.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-light.eot");
+  src: url("../fonts/merriweather-light.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light.woff") format("woff"), url("../fonts/merriweather-light.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-regular.eot");
+  src: url("../fonts/merriweather-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular.woff") format("woff"), url("../fonts/merriweather-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-bold.eot");
+  src: url("../fonts/merriweather-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold.woff") format("woff"), url("../fonts/merriweather-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-ultrabold.eot");
+  src: url("../fonts/merriweather-ultrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-ultrabold.woff") format("woff"), url("../fonts/merriweather-ultrabold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-lightit.eot");
+  src: url("../fonts/merriweather-lightit.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-lightit.woff") format("woff"), url("../fonts/merriweather-lightit.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-italic.eot");
+  src: url("../fonts/merriweather-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic.woff") format("woff"), url("../fonts/merriweather-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-boldit.eot");
+  src: url("../fonts/merriweather-boldit.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-boldit.woff") format("woff"), url("../fonts/merriweather-boldit.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-ultrabdit.eot");
+  src: url("../fonts/merriweather-ultrabdit.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-ultrabdit.woff") format("woff"), url("../fonts/merriweather-ultrabdit.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
@@ -421,8 +463,8 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Constantine", serif;
-  font-size: 1em;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1;
   padding: 0.75em 1em;
@@ -446,21 +488,21 @@ button {
 fieldset {
   background-color: white;
   border: 1px solid #f4f4f0;
-  margin: 0 0 0.75em;
-  padding: 1.5em; }
+  margin: 0 0 0.75rem;
+  padding: 1.5rem; }
 
 /* line 8, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
 input,
 label,
 select {
   display: block;
-  font-family: "Constantine", serif;
-  font-size: 1em; }
+  font-family: "Merriweather", serif;
+  font-size: 1rem; }
 
 /* line 16, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
 label {
   font-weight: 600;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.375rem; }
   /* line 20, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
   label.required::after {
     content: "*"; }
@@ -477,10 +519,10 @@ textarea {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Constantine", serif;
-  font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
   transition: border-color;
   width: 100%; }
   /* line 44, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
@@ -512,16 +554,16 @@ input[type="search"] {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: 0.375em; }
+  margin-right: 0.375rem; }
 
 /* line 69, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
 input[type="file"] {
-  padding-bottom: 0.75em;
+  padding-bottom: 0.75rem;
   width: 100%; }
 
 /* line 74, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_forms.scss */
 select {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   max-width: 100%;
   width: auto; }
 
@@ -533,11 +575,11 @@ ol {
   padding: 0; }
 /* line 20, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_lists.scss */
 dl {
-  margin-bottom: 0.75em; }
+  margin-bottom: 0.75rem; }
   /* line 23, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_lists.scss */
   dl dt {
     font-weight: bold;
-    margin-top: 0.75em; }
+    margin-top: 0.75rem; }
   /* line 28, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_lists.scss */
   dl dd {
     margin: 0; }
@@ -549,7 +591,7 @@ table {
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 0.75rem 0;
   table-layout: fixed;
   width: 100%; }
 
@@ -557,13 +599,13 @@ table {
 th {
   border-bottom: 1px solid #d4d4c4;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: 0.75rem 0;
   text-align: left; }
 
 /* line 16, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_tables.scss */
 td {
   border-bottom: 1px solid #f4f4f0;
-  padding: 0.75em 0; }
+  padding: 0.75rem 0; }
 
 /* line 21, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_tables.scss */
 tr,
@@ -579,8 +621,8 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   color: #f4f4f0;
-  font-family: "Constantine", serif;
-  font-size: 1em;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
   line-height: 1.5; }
 
 /* line 10, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
@@ -590,14 +632,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Constantine", serif;
-  font-size: 1em;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75rem; }
 
 /* line 22, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75rem; }
 
 /* line 26, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 a {
@@ -617,7 +659,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: 1.5em 0; }
+  margin: 1.5rem 0; }
 
 /* line 51, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 img,
@@ -676,19 +718,22 @@ body {
   margin-top: 100px;
   margin-bottom: 80px;
   min-height: 100vh; }
-  /* line 34, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-  .delete-me .container h1 {
-    font-weight: 100;
-    font-size: 44px;
-    color: #f2a3bd;
-    border-bottom: 2px solid #f2a3bd;
+  /* line 33, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  .delete-me .container {
     text-align: center; }
-  /* line 41, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-  .delete-me .container p {
-    text-align: right;
-    font-size: 18px; }
+    /* line 35, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    .delete-me .container h1 {
+      font-weight: 400;
+      font-size: 3.125rem;
+      color: #f2a3bd;
+      border-bottom: 4px solid #f2a3bd;
+      letter-spacing: 2px; }
+    /* line 43, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    .delete-me .container p {
+      text-align: right;
+      font-size: 18px; }
 
-/* line 48, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 50, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 header {
   height: 350px;
   max-width: 68em;
@@ -700,10 +745,10 @@ header {
     content: "";
     display: table; }
   @media screen and (max-width: 799px) {
-    /* line 48, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 50, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header {
       height: 200px; } }
-  /* line 69, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 71, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   header .logo {
     float: left;
     display: block;
@@ -719,7 +764,7 @@ header {
     /* line 89, /home/vilinicz/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     header .logo:last-child {
       margin-right: 0; }
-  /* line 84, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 86, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   header .nav {
     margin-top: -50px;
     padding-bottom: 40px;
@@ -731,68 +776,65 @@ header {
     header .nav:last-child {
       margin-right: 0; }
     @media screen and (max-width: 799px) {
-      /* line 84, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 86, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav {
         text-align: center; } }
-    /* line 97, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 100, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav ul {
+      width: 50%;
       float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
       letter-spacing: 0px;
-      font-size: 22px;
+      font-size: 1.5rem;
       font-weight: 100;
       font-family: 'Beer money';
       color: #f4f4f0;
       text-transform: uppercase;
       line-height: 2.2em; }
-      /* line 89, /home/vilinicz/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
-      header .nav ul:last-child {
-        margin-right: 0; }
-      /* line 110, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 115, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav ul a {
         color: #f4f4f0; }
-        /* line 110, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 115, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul a:hover {
           color: #6fe7db; }
-        /* line 110, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 115, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul a:active, header .nav ul a:focus {
           color: #2ddccb; }
-      /* line 111, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 116, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav ul a.active {
         color: #2ddccb; }
       @media screen and (max-width: 799px) {
-        /* line 97, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 100, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul {
           width: auto;
-          font-size: 19px;
+          font-size: 1.25rem;
           line-height: 2.5em;
           margin: 2%;
           margin-top: 50px;
           text-align: center; } }
-    /* line 121, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 126, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav ul.nav-right {
       text-align: right;
-      text-transform: lowercase; }
-    /* line 122, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      text-transform: lowercase;
+      float: right; }
+    /* line 127, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav li {
       display: inline-block;
       margin: 0 3px; }
       @media screen and (max-width: 799px) {
-        /* line 122, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 127, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav li {
+          display: inline;
           text-align: center; } }
 
-/* line 139, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 144, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 section#contact {
   height: 100vh; }
-  /* line 146, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 151, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .parallax-photo {
     width: 100%;
     height: 50%;
     box-shadow: inset 0 0 10px #111; }
-  /* line 154, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 159, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .contact-info {
     height: 50%;
     z-index: 1099;
@@ -826,7 +868,7 @@ section#contact {
     background-position: center center;
     background-size: 14%;
     border-bottom: none; }
-    /* line 170, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 175, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     section#contact .contact-info ul > li {
       font-family: 'Beer money';
       font-size: 32px;
@@ -837,12 +879,40 @@ section#contact {
         1px -1px 0 #111,
         -1px 1px 0 #111,
         1px 1px 0 #111;*/ }
-      /* line 182, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 187, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       section#contact .contact-info ul > li a {
         color: #f2a3bd; }
-        /* line 187, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 192, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         section#contact .contact-info ul > li a:hover {
           color: #6fe7db; }
+
+/* line 204, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.grid {
+  margin: 0 auto; }
+
+/* line 205, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.grid-item {
+  width: calc(100% / 2);
+  float: left; }
+  /* line 215, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  .grid-item img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: block;
+    width: 100%; }
+    /* line 220, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    .grid-item img:hover {
+      width: 110%; }
+  /* line 222, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  .grid-item .overlay {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow .25s ease; }
 
 @media screen and (max-width: 799px) {
   /* line 3, /home/vilinicz/projects/lovep/source/assets/stylesheets/_mobile.scss */
