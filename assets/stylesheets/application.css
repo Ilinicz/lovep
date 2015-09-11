@@ -785,7 +785,6 @@ header {
     top: 10%;
     width: 90%;
     margin: 0 5%;
-    z-index: 9999;
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     box-pack: justify;
@@ -815,7 +814,8 @@ header {
       /* line 113, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav {
         text-align: center;
-        top: 75%; } }
+        top: 75%;
+        z-index: 9999; } }
     /* line 132, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav ul {
       float: left;
