@@ -917,11 +917,11 @@ section#contact {
   /* line 216, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .parallax-photo {
     width: 100%;
-    height: 50%;
+    height: 70%;
     box-shadow: inset 0 0 10px #111; }
   /* line 224, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .contact-info {
-    height: 50%;
+    height: 30%;
     z-index: 1099;
     -webkit-box-pack: distribute;
     -moz-box-pack: distribute;
