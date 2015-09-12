@@ -694,8 +694,9 @@ html {
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 body {
   background-color: #111;
-  background-image: -webkit-linear-gradient(left, rgba(17, 17, 17, 0.2) 0%, rgba(255, 255, 255, 0.1) 60%), url("../images/chalkboard-bg.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(17, 17, 17, 0.2) 0%, rgba(255, 255, 255, 0.1) 60%), url("../images/bg.jpg");
   background-repeat: repeat, repeat;
+  background-position: cover, contain;
   width: 100%;
   height: 100%; }
 
