@@ -1,11 +1,103 @@
-@import "http://webfonts.ru/import/resavskabg.css";
-@import "http://webfonts.ru/import/calligraph.css";
+//@import "http://webfonts.ru/import/constantine.css";;
+//@import "http://webfonts.ru/import/beermoney.css";
+
+//@include font-face('Constantine', '/fonts/constantine', $file-formats: eot woff ttf css);
+//@include font-face('Beer money', '/fonts/beer_money', $file-formats: eot woff ttf css);
+@font-face {
+    font-family: 'Beer money';
+    src: font-url('beer_money.eot');
+    src: font-url('beer_money.eot?#iefix') format('embedded-opentype'),
+         font-url('beer_money.woff') format('woff'),
+         font-url('beer_money.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-light.eot');
+    src: font-url('merriweather-light.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-light.woff') format('woff'),
+         font-url('merriweather-light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-regular.eot');
+    src: font-url('merriweather-regular.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-regular.woff') format('woff'),
+         font-url('merriweather-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-bold.eot');
+    src: font-url('merriweather-bold.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-bold.woff') format('woff'),
+         font-url('merriweather-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-ultrabold.eot');
+    src: font-url('merriweather-ultrabold.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-ultrabold.woff') format('woff'),
+         font-url('merriweather-ultrabold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-lightit.eot');
+    src: font-url('merriweather-lightit.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-lightit.woff') format('woff'),
+         font-url('merriweather-lightit.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-italic.eot');
+    src: font-url('merriweather-italic.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-italic.woff') format('woff'),
+         font-url('merriweather-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-boldit.eot');
+    src: font-url('merriweather-boldit.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-boldit.woff') format('woff'),
+         font-url('merriweather-boldit.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: font-url('merriweather-ultrabdit.eot');
+    src: font-url('merriweather-ultrabdit.eot?#iefix') format('embedded-opentype'),
+         font-url('merriweather-ultrabdit.woff') format('woff'),
+         font-url('merriweather-ultrabdit.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+//@import "http://webfonts.ru/import/merriweather.css";
 // Typography
-$base-font-family: 'Resavska BG Sans', sans-serif;
+$base-font-family: 'Merriweather', serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1rem;
 
 // Line height
 $base-line-height: 1.5;
@@ -13,19 +105,22 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-spacing: $base-line-height * 1rem;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
-$pink: #c282a3;
-$blue: #539fc8;
+$light-gray: #f4f4f0;
+$pink: #f2a3bd;
+$orange: #fad48b;
+$yellow: #f5f9ad;
+$blue: #6fe7db;
+$green: #bcdf8a;
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
+$base-font-color: $light-gray;
 $action-color: $blue;
 
 // Border

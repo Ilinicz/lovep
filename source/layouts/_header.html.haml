@@ -1,16 +1,19 @@
 %header
   .logo
-  %nav.nav
-    %ul.nav-left
+  %nav.nav#nav
+    %ul
       %li
-        = nav_link 'Главная', '/'
-      %li.hidden-mobile /
+        = link_to 'О студии', '#about'
+      //%li.hidden-mobile ~
       %li
-        = nav_link 'Работы', '/works'
+        = link_to 'Работы', '#works'
+      //%li.hidden-mobile ~
+      %li
+        = link_to 'Инфо', '#contact'
     %ul.nav-right
-      %li
-        = link_to 'Цены', '#'
-      %li.hidden-mobile /
-      %li
-        = link_to 'Контакты', '#'
+      %li= link_to '8(567)8656786', 'tel:85678656786'
+      //%li.hidden-mobile ~
+      %li= link_to 'lovep@mail.ru', 'mailto:lovep@mail.ru'
+
+
 

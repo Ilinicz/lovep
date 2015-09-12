@@ -8,9 +8,8 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    #grain
-      = partial 'layouts/header'
-      = yield
-    //  = partial 'layouts/footer'
-    //%span.left_border
+    = partial 'layouts/header'
+    = yield
+    = partial 'layouts/contact'
+    = partial 'layouts/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
