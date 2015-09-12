@@ -448,6 +448,10 @@ th {
   src: url("../fonts/merriweather-ultrabdit.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-ultrabdit.woff") format("woff"), url("../fonts/merriweather-ultrabdit.ttf") format("truetype");
   font-weight: 900;
   font-style: italic; }
+@font-face {
+  font-family: 'Constantine';
+  src: url("../fonts/constantine.eot");
+  src: url("../fonts/constantine.eot?#iefix") format("embedded-opentype"), url("../fonts/constantine.woff") format("woff"), url("../fonts/constantine.ttf") format("truetype"); }
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
@@ -457,10 +461,10 @@ button {
   -o-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
-  background-color: #6fe7db;
+  background-color: #fad48b;
   border-radius: 3px;
   border: none;
-  color: #fff;
+  color: #333;
   cursor: pointer;
   display: inline-block;
   font-family: "Merriweather", serif;
@@ -650,26 +654,33 @@ h2 {
   font-weight: 400;
   font-size: 2.5rem;
   color: #bcdf8a;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #222, 3px 2px 0 #bcdf8a; }
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 0 #222, 2px 2px 0 #bcdf8a; }
 
-/* line 39, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 38, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-weight: 400;
+  font-size: 1.875rem;
+  color: #fad48b;
+  text-shadow: 1px 1px 0 #222; }
+
+/* line 46, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 p {
   margin: 0 0 0.75rem; }
 
-/* line 43, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 50, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 a {
   color: #6fe7db;
   text-decoration: none;
   transition: color 0.1s linear; }
-  /* line 48, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+  /* line 55, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus, a:hover {
     color: #2ddccb; }
-  /* line 54, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+  /* line 61, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus {
     outline: none; }
 
-/* line 60, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 67, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 hr {
   border-bottom: 1px solid #f4f4f0;
   border-left: none;
@@ -677,7 +688,7 @@ hr {
   border-top: none;
   margin: 1.5rem 0; }
 
-/* line 68, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 75, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 img,
 picture {
   margin: 0;
@@ -694,9 +705,9 @@ html {
 /* line 1, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 body {
   background-color: #111;
-  background-image: -webkit-linear-gradient(left, rgba(17, 17, 17, 0.2) 0%, rgba(255, 255, 255, 0.1) 60%), url("../images/bg.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(17, 17, 17, 0.2) 0%, rgba(255, 255, 255, 0.1) 60%), url("../images/chalkboard-bg.jpg");
   background-repeat: repeat, repeat;
-  background-position: cover, contain;
+  background-position: cover, cover;
   width: 100%;
   height: 100%; }
 
@@ -717,57 +728,82 @@ body {
     display: table; }
 
 /* line 19, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-section {
+section#about {
   padding-top: 3%;
   margin-top: 80px;
-  margin-bottom: 50px;
-  min-height: 100vh; }
-  /* line 27, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-  section .container h1 {
-    border-bottom: 3px solid #f2a3bd;
-    text-align: center;
-    position: relative; }
-    /* line 32, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-    section .container h1:before {
-      position: absolute;
-      display: block;
-      content: '';
-      border-bottom: 2px solid #f4f4f0;
-      height: 100%;
-      width: 99.3%;
-      left: 0.4%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      bottom: -6px; }
-  /* line 46, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-  section .container p {
+  margin-bottom: 50px; }
+  /* line 28, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  section#about .container p.banner {
     width: 95%;
     margin: auto;
-    border-bottom: 3px solid #f2a3bd;
     text-align: right;
     font-size: 18px;
     margin-bottom: 40px;
     padding-bottom: 10px;
+    font-style: italic;
     position: relative; }
-    /* line 57, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-    section .container p:before {
-      position: absolute;
-      display: block;
-      content: '';
-      border-bottom: 2px solid #f4f4f0;
-      height: 100%;
-      width: 99.3%;
-      left: 0.4%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      bottom: 1px; }
 
-/* line 74, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 56, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+h1.banner {
+  border-bottom: 3px solid #f2a3bd;
+  text-align: center;
+  position: relative; }
+  /* line 61, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  h1.banner:before {
+    position: absolute;
+    display: block;
+    content: '';
+    border-bottom: 2px solid #f4f4f0;
+    height: 100%;
+    width: 99.3%;
+    left: 0.4%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    bottom: -6px; }
+
+/* line 76, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square {
+  width: 100%;
+  height: 50px;
+  display: inline-block; }
+
+/* line 81, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.a {
+  background-color: #f2a3bd; }
+
+/* line 82, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.b {
+  background-color: #fad48b; }
+
+/* line 83, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.c {
+  background-color: #f5f9ad; }
+
+/* line 84, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.d {
+  background-color: #bcdf8a; }
+
+/* line 85, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.e {
+  background-color: #6fe7db; }
+
+/* line 86, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.f {
+  background-color: #333; }
+
+/* line 87, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.g {
+  background-color: #999; }
+
+/* line 88, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+.color-square.h {
+  background-color: #f4f4f0; }
+
+/* line 90, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 header {
   height: 100vh; }
-  /* line 95, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 111, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   header .logo {
     margin-right: 0;
     height: 100%;
@@ -777,15 +813,15 @@ header {
     background-size: contain, contain;
     opacity: 1; }
     @media screen and (max-width: 799px) {
-      /* line 95, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 111, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .logo {
         height: 75%; } }
-  /* line 113, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 129, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   header .nav {
     position: fixed;
-    top: 10%;
-    width: 90%;
-    margin: 0 5%;
+    top: 5%;
+    width: 98%;
+    margin: 0 1%;
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     box-pack: justify;
@@ -812,13 +848,14 @@ header {
     align-items: center;
     -ms-flex-align: center; }
     @media screen and (max-width: 799px) {
-      /* line 113, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 129, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav {
         text-align: center;
         top: 75%;
         z-index: 9999; } }
-    /* line 132, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 148, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav ul {
+      padding: 1%;
       float: left;
       letter-spacing: 0px;
       font-size: 1.75rem;
@@ -826,59 +863,55 @@ header {
       font-family: 'Beer money';
       color: #f4f4f0;
       text-transform: uppercase;
-      line-height: 2.2em; }
-      /* line 148, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      line-height: 1.8em;
+      z-index: 99999; }
+      /* line 167, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav ul a {
         color: #f4f4f0; }
-        /* line 148, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 167, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul a:hover {
           color: #6fe7db; }
-        /* line 148, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 167, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul a:active, header .nav ul a:focus {
           color: #2ddccb; }
-      /* line 149, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 168, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       header .nav ul a.active {
         color: #2ddccb; }
       @media screen and (max-width: 799px) {
-        /* line 132, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 148, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav ul {
           width: auto;
-          font-size: 1.6875rem;
+          font-size: 1.375rem;
           line-height: 1.6em;
           margin: 2%;
           margin-top: 50px;
           text-align: center;
           background-color: rgba(17, 17, 17, 0.7); } }
-    /* line 160, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 179, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav ul.nav-right {
       text-align: right;
       text-transform: lowercase;
       float: right;
-      font-size: 1.5rem;
-      text-decoration: underline; }
-      @media screen and (max-width: 799px) {
-        /* line 166, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
-        header .nav ul.nav-right li {
-          display: block; } }
-    /* line 172, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      font-size: 1.5rem; }
+    /* line 191, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     header .nav li {
       display: block;
       margin: 0 3px; }
       @media screen and (max-width: 799px) {
-        /* line 172, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 191, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         header .nav li {
           display: inline-block;
           text-align: center; } }
 
-/* line 189, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 209, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 section#contact {
   height: 100vh; }
-  /* line 196, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 216, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .parallax-photo {
     width: 100%;
     height: 50%;
     box-shadow: inset 0 0 10px #111; }
-  /* line 204, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 224, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   section#contact .contact-info {
     height: 50%;
     z-index: 1099;
@@ -912,7 +945,7 @@ section#contact {
     background-position: center center;
     background-size: 14%;
     border-bottom: none; }
-    /* line 220, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 240, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     section#contact .contact-info ul > li {
       font-size: 24px;
       line-height: 2.4em;
@@ -922,37 +955,38 @@ section#contact {
         1px -1px 0 #111,
         -1px 1px 0 #111,
         1px 1px 0 #111;*/ }
-      /* line 232, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+      /* line 252, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
       section#contact .contact-info ul > li a {
         color: #f2a3bd; }
-        /* line 237, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+        /* line 257, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
         section#contact .contact-info ul > li a:hover {
           color: #6fe7db; }
 
-/* line 249, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 269, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 .grid {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px; }
   /* line 89, /home/vilinicz/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .grid:last-child {
     margin-right: 0; }
 
-/* line 254, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 275, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 .grid-item {
-  width: calc(100% / 2);
+  width: calc(100% / 4);
   padding: 10px;
   background: url("../images/light_wool.png") repeat;
   float: left;
   position: relative; }
-  /* line 278, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 299, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   .grid-item img {
     margin-bottom: 0;
     padding-bottom: 0;
     display: block;
     width: 100%; }
-  /* line 286, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+  /* line 307, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
   .grid-item .overlay {
     position: absolute;
     top: 0;
@@ -1000,24 +1034,24 @@ section#contact {
     -webkit-transition: all .15s ease-in;
     background: linear-gradient(0deg, rgba(255, 255, 0, 0.1) 60%, rgba(255, 136, 0, 0.1) 80%);
     box-shadow: inset -5px -3px 15px 0 #fad48b, inset 0px 0px 0px 500px rgba(255, 255, 255, 0.15), 0 5px 10px rgba(0, 0, 0, 0.5); }
-    /* line 308, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 329, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     .grid-item .overlay:hover {
       opacity: 0.2; }
-    /* line 313, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 334, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     .grid-item .overlay h4 {
       font-size: 3rem;
       font-family: "Beer money"; }
-    /* line 317, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+    /* line 338, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
     .grid-item .overlay p {
       font-size: 1.25rem;
       font-weight: 900;
       font-style: italic; }
 
-/* line 324, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 345, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 .grid-item.thin {
   width: calc(100% / 3); }
 
-/* line 329, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
+/* line 350, /home/vilinicz/projects/lovep/source/assets/stylesheets/_global.scss */
 .description {
   float: left;
   display: block;
