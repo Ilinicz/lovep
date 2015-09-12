@@ -627,10 +627,9 @@ body {
   color: #f4f4f0;
   font-family: "Merriweather", serif;
   font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 600; }
+  line-height: 1.5; }
 
-/* line 11, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 12, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -642,15 +641,15 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75rem; }
 
-/* line 23, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 24, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 h1 {
   font-weight: 400;
   font-size: 3.125rem;
   color: #f2a3bd;
   letter-spacing: 4px;
-  text-shadow: 2px 2px 0 #222, 3px 2px 0 #f2a3bd; }
+  text-shadow: 1px 1px 0 #222, 2px 2px 0 #f2a3bd; }
 
-/* line 32, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 33, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 h2 {
   font-weight: 400;
   font-size: 2.5rem;
@@ -658,30 +657,30 @@ h2 {
   letter-spacing: 1px;
   text-shadow: 1px 2px 0 #222, 2px 2px 0 #bcdf8a; }
 
-/* line 39, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 40, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 h3 {
   font-weight: 400;
   font-size: 1.875rem;
   color: #fad48b;
   text-shadow: 1px 1px 0 #222; }
 
-/* line 47, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 48, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 p {
   margin: 0 0 0.75rem; }
 
-/* line 51, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 53, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 a {
   color: #6fe7db;
   text-decoration: none;
   transition: color 0.1s linear; }
-  /* line 56, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+  /* line 58, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus, a:hover {
     color: #2ddccb; }
-  /* line 62, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+  /* line 64, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus {
     outline: none; }
 
-/* line 68, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 70, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 hr {
   border-bottom: 1px solid #f4f4f0;
   border-left: none;
@@ -691,7 +690,7 @@ hr {
   border-width: 3px;
   margin: 1.5rem 0; }
 
-/* line 78, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
+/* line 80, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 img,
 picture {
   margin: 0;
