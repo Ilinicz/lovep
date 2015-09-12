@@ -659,9 +659,10 @@ h2 {
 
 /* line 40, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
 h3 {
-  font-weight: 400;
-  font-size: 1.875rem;
-  color: #fad48b;
+  font-weight: 100;
+  font-size: 2.125rem;
+  color: #f5f9ad;
+  font-family: 'Beer money';
   text-shadow: 1px 1px 0 #222; }
 
 /* line 48, /home/vilinicz/projects/lovep/source/assets/stylesheets/base/_typography.scss */
